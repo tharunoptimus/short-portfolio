@@ -1,173 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Tharunraj Mailvakanan" />
-		<title>Tharunraj Mailvakanan</title>
-        <style>::-webkit-scrollbar{width:0;background:0 0}html{overflow:scroll;overflow-x:hidden}body,html{margin:0;padding:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif}a{text-decoration:none;color:#0070f3;border-bottom:.5px solid transparent}a:hover{border-bottom:.5px solid #0070f3;transition:all .2s ease-in-out}li{margin-bottom:2px}.wrapper{max-width:800px;margin:10px auto;display:flex;flex-direction:column;gap:20px;padding:0 1rem}.imageContainer{margin:2rem auto 0;padding:2rem;}.imageContainer img{height:100%;border:1px solid #44444444;border-radius:50%;box-shadow:0 0 16px 0 #44444444}.nameContainer,.statusContainer{text-align:center;font-size:3rem;font-weight:600}.statusContainer{font-size:2rem}.aboutMe{font-size:1.3rem;text-align:center}.aboutContainer,.links,.projects{display:flex;flex-direction:column;gap:10px;font-size:1.2rem}.aboutContainer span:nth-child(1),.links span,.projects span:nth-child(1){margin-top:1rem;text-align:left;font-size:1.8rem;background-color:#fff;z-index:1;font-weight:600}.aboutContainer span:nth-child(2){text-align:left;font-size:1.4rem}.aboutContainer span:last-child(){text-align:justify}.projects{display:flex;flex-direction:column;gap:10px}.recentProjectHolder{display:flex;flex-direction:column}.listTitle{display:flex;align-items:center;gap:5px}.imageOfFire{height:2rem;width:2rem;padding:.5rem}.imageOfFire img{height:100%}.links{font-size:1.2rem}</style>
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="imageContainer">
-				<img src="/tharunoptimus.jpg" alt="Tharunraj Mailvakanan" aria-label="Image of Tharunraj Mailvakanan" width="160" height="160"/>
-			</div>
 
-			<div class="nameContainer">
-				<span>Tharunraj Mailvakanan</span>
-			</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Tharunraj Mailvakanan" />
+	<title>Tharunraj Mailvakanan</title>
+	<style>
+		::-webkit-scrollbar {
+			width: 0;
+			background: 0 0
+		}
 
-			<div class="statusContainer">
-				<span>Full Stack Web Developer</span>
-			</div>
+		html {
+			overflow: scroll;
+			overflow-x: hidden
+		}
 
-			<div class="aboutMe">
-				<span
-					>I am a fast learner by building things and I am always
-					looking to learn new things. Eager to get involved with most
-					of the web technologies.</span
-				>
-			</div>
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+		}
 
-			<div class="aboutContainer">
-				<span>What can I do?</span>
-				<span>I can build</span>
-				<ul>
-					<li>Full Stack Web Apps 🌐</li>
-					<li>PWAs 📱 with cool service workers 👨‍🏭</li>
-					<li>SPAs with React, Vue or Next.js 🛬</li>
-					<li>RESTful APIs with Express or PHP 🌠</li>
-					<li>
-						Manage Database and schemas with MongoDB, MySQL or
-						Postgres 🛢
-					</li>
-					<li>Manipulate DOM with jQuery 🤹‍♂️</li>
-					<li>Render HTML with PUG / Jade 👩‍💻</li>
-					<li>Create a new Programming Language 👶</li>
-					<li>
-						and can use CSS with or without Bootstrap or Tailwind ✨
-					</li>
-				</ul>
-				<span
-					>I can also host the websites and web apps on AWS, Netlify,
-					Cloudflare Pages, Vercel or Heroku. I use Git to manage my
-					source code and GitHub to keep track of my projects and make
-					it open source.</span
-				>
-			</div>
+		a {
+			text-decoration: none;
+			color: #0070f3;
+			border-bottom: .5px solid transparent
+		}
 
-			<div class="projects">
-				<span>My recent project</span>
-				<div class="recentProjectHolder">
-					<div class="listTitle">
-						<div class="partOne">
-							<div class="imageOfFire">
-								<img
-									src="data:image/png;base64,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"
-									alt="Infant Lang"
-								/>
-							</div>
-						</div>
-						<div class="partTwo">
-							<div class="listHeading">Infant Lang</div>
-							<div class="listUrl">
-								<a
-									target="_blank"
-									href="https://infant-lang.netlify.app"
-									rel="noopener noreferrer"
-									>infant-lang.netlify.app</a
-								>&nearr;
-							</div>
+		a:hover {
+			border-bottom: .5px solid #0070f3;
+			transition: all .2s ease-in-out
+		}
+
+		li {
+			margin-bottom: 2px
+		}
+
+		.wrapper {
+			max-width: 800px;
+			margin: 10px auto;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			padding: 0 1rem
+		}
+
+		.imageContainer {
+			margin: 2rem auto 0;
+			padding: 2rem;
+		}
+
+		.imageContainer img {
+			height: 100%;
+			border: 1px solid #44444444;
+			border-radius: 50%;
+			box-shadow: 0 0 16px 0 #44444444
+		}
+
+		.nameContainer,
+		.statusContainer {
+			text-align: center;
+			font-size: 3rem;
+			font-weight: 600
+		}
+
+		.statusContainer {
+			font-size: 2rem
+		}
+
+		.aboutMe {
+			font-size: 1.3rem;
+			text-align: center
+		}
+
+		.aboutContainer,
+		.links,
+		.projects {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			font-size: 1.2rem
+		}
+
+		.aboutContainer span:nth-child(1),
+		.links span,
+		.projects span:nth-child(1) {
+			margin-top: 1rem;
+			text-align: left;
+			font-size: 1.8rem;
+			background-color: #fff;
+			z-index: 1;
+			font-weight: 600
+		}
+
+		.aboutContainer span:nth-child(2) {
+			text-align: left;
+			font-size: 1.4rem
+		}
+
+		.aboutContainer span:last-child() {
+			text-align: justify
+		}
+
+		.projects {
+			display: flex;
+			flex-direction: column;
+			gap: 10px
+		}
+
+		.recentProjectHolder {
+			display: flex;
+			flex-direction: column
+		}
+
+		.listTitle {
+			display: flex;
+			align-items: center;
+			gap: 5px
+		}
+
+		.imageOfFire {
+			height: 2rem;
+			width: 2rem;
+			padding: .5rem
+		}
+
+		.imageOfFire img {
+			height: 100%
+		}
+
+		.links {
+			font-size: 1.2rem
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="imageContainer">
+			<img src="/tharunoptimus.jpg" alt="Tharunraj Mailvakanan" aria-label="Image of Tharunraj Mailvakanan"
+				width="160" height="160" />
+		</div>
+
+		<div class="nameContainer">
+			<span>Tharunraj Mailvakanan</span>
+		</div>
+
+		<div class="statusContainer">
+			<span>Full Stack Web Developer</span>
+		</div>
+
+		<div class="aboutMe">
+			<span>I am a fast learner by building things and I am always
+				looking to learn new things. Eager to get involved with most
+				of the web technologies.</span>
+		</div>
+
+		<div class="aboutContainer">
+			<span>What can I do?</span>
+			<span>I can build</span>
+			<ul>
+				<li>Full Stack Web Apps 🌐</li>
+				<li>PWAs 📱 with cool service workers 👨‍🏭</li>
+				<li>SPAs with React, Vue or Next.js 🛬</li>
+				<li>RESTful APIs with Express or PHP 🌠</li>
+				<li>
+					Manage Database and schemas with MongoDB, MySQL or
+					Postgres 🛢
+				</li>
+				<li>Manipulate DOM with jQuery 🤹‍♂️</li>
+				<li>Render HTML with PUG / Jade 👩‍💻</li>
+				<li>Create a new Programming Language 👶</li>
+				<li>
+					and can use CSS with or without Bootstrap or Tailwind ✨
+				</li>
+			</ul>
+			<span>I can also host the websites and web apps on AWS, Netlify,
+				Cloudflare Pages, Vercel or Heroku. I use Git to manage my
+				source code and GitHub to keep track of my projects and make
+				it open source.</span>
+		</div>
+
+		<div class="projects">
+			<span>My recent project</span>
+			<div class="recentProjectHolder">
+				<div class="listTitle">
+					<div class="partOne">
+						<div class="imageOfFire">
+							<img src="data:image/png;base64,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"
+								alt="Infant Lang" />
 						</div>
 					</div>
-					<div class="listContent">
-						<ul>
-							<li>
-								Minimalistic 📉 Less Esoteric Programming 👩‍💻 Language for Infants 👶
-							</li>
-							<li>
-								A Lightning fast Interpreter written in Go!
-							</li>
-							<li>
-								Inspired by BrainFuck. 🧠
-							</li>
-							<li>
-								More elegant keywords ⌨ for infants 
-							</li>
-							<li>
-								Manual simplified 🐣 control over the pointer 👆
-							</li>
-							<li>
-								Easiest one line for 🏃‍♀️ loop for repetitive tasks such as multiplication 👩‍🔬
-							</li>
-						</ul>
+					<div class="partTwo">
+						<div class="listHeading">Infant Lang</div>
+						<div class="listUrl">
+							<a target="_blank" href="https://infant.pages.dev"
+								rel="noopener noreferrer">infant.pages.dev</a>&nearr;
+						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="links">
-                <span>Links</span>
-				<ul>
-                </li>
-                <li>
-                    Facebook:
-                    <a
-                    href="https://facebook.com/tharunoptimus"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >@tharunoptimus</a
-                    >&nearr;
-                </li>
-					<li>
-                        Instagram:
-						<a
-                        href="https://instagram.com/tharunoptimus"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        >@tharunoptimus</a
-						>&nearr;
-					</li>
-					<li>
-                        LinkedIn:
-						<a
-                        href="https://www.linkedin.com/in/tharunoptimus/"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        >@tharunoptimus</a
-						>&nearr;
-					</li>
-					<li>
-                        GitHub:
-						<a
-                        href="https://github.com/tharunoptimus"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        >@tharunoptimus</a
-						>&nearr;
-					</li>
-                    <li>
-                        Email:
-                        <a
-                            href="mailto:tharunoptimus@pm.me"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            >tharunoptimus@pm.me</a
-                        >&nearr;
-                    <li>
-                        Resume:
-                        <a href="https://tharunoptimus.github.io/pdfs/Tharunraj-Mailvakanan.pdf"
-                        rel="noopener noreferrer">
-                        @tharunoptimus</a>&nearr;
-                    </li>
-                    <li>
-                        Main Page:
-                        <a href="https://tharunoptimus.netlify.app"
-                        rel="noopener noreferrer">
-                        tharunoptimus.netlify.app</a>&nearr;
-                    </li>
-				</ul>
+				<div class="listContent">
+					<ul>
+						<li>
+							Minimalistic 📉 Less Esoteric Programming 👩‍💻 Language for Infants 👶
+						</li>
+						<li>
+							A Lightning fast Interpreter written in Go!
+						</li>
+						<li>
+							Inspired by BrainFuck. 🧠
+						</li>
+						<li>
+							More elegant keywords ⌨ for infants
+						</li>
+						<li>
+							Manual simplified 🐣 control over the pointer 👆
+						</li>
+						<li>
+							Easiest one line for 🏃‍♀️ loop for repetitive tasks such as multiplication 👩‍🔬
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</body>
-    </html>
-    
+
+		<div class="links">
+			<span>Links</span>
+			<ul>
+				<li>
+					Main Page:
+					<a href="https://tharunoptimus.netlify.app" rel="noopener noreferrer">
+						tharunoptimus.netlify.app</a>&nearr;
+				</li>
+				<li>
+					Facebook:
+					<a href="https://facebook.com/tharunoptimus" rel="noopener noreferrer"
+						target="_blank">@tharunoptimus</a>&nearr;
+				</li>
+				<li>
+					Instagram:
+					<a href="https://instagram.com/tharunoptimus" rel="noopener noreferrer"
+						target="_blank">@tharunoptimus</a>&nearr;
+				</li>
+				<li>
+					LinkedIn:
+					<a href="https://www.linkedin.com/in/tharunoptimus/" rel="noopener noreferrer"
+						target="_blank">@tharunoptimus</a>&nearr;
+				</li>
+				<li>
+					GitHub:
+					<a href="https://github.com/tharunoptimus" rel="noopener noreferrer"
+						target="_blank">@tharunoptimus</a>&nearr;
+				</li>
+				<li>
+					Email:
+					<a href="mailto:tharunoptimus@pm.me" rel="noopener noreferrer"
+						target="_blank">tharunoptimus@pm.me</a>&nearr;
+				<li>
+					Resume:
+					<a href="https://tharunoptimus.github.io/pdfs/Tharunraj-Mailvakanan.pdf" rel="noopener noreferrer">
+						@tharunoptimus</a>&nearr;
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>
