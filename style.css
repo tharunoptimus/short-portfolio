@@ -1,3 +1,10 @@
+:root {
+	--textColor: #000000;
+	--linkColor: #0070f3;
+	--backgroundColor: #FFFFFF;
+	--boxShadowColor: #44444444;
+}
+
 ::-webkit-scrollbar {
 	width: 0;
 	background: transparent;
@@ -15,16 +22,20 @@ body {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont,
 		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
 		"Helvetica Neue", sans-serif;
+	color: var(--textColor);
+	background-color: var(--backgroundColor);
 }
 
 a {
 	text-decoration: none;
-	color: #0070f3;
+	color: var(--linkColor);
 	border-bottom: 0.5px solid transparent;
 }
 
 a:hover {
-	border-bottom: 0.5px solid #0070f3;
+	border-bottom: 0.5px solid var(--linkColor);
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -35,8 +46,13 @@ li {
 .wrapper {
 	max-width: 800px;
 	margin: 10px auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	gap: 20px;
 	padding: 0 1rem;
 }
@@ -50,9 +66,10 @@ li {
 
 .imageContainer img {
 	height: 100%;
-	border: 1px solid #44444444;
+	border: 1px solid var(--boxShadowColor);
 	border-radius: 50%;
-	box-shadow: 0 0 16px 0 #44444444;
+	-webkit-box-shadow: 0 0 16px 0 var(--boxShadowColor);
+	        box-shadow: 0 0 16px 0 var(--boxShadowColor);
 }
 
 .nameContainer,
@@ -74,8 +91,13 @@ li {
 .aboutContainer,
 .projects,
 .links {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	gap: 10px;
 	font-size: 1.2rem;
 }
@@ -86,7 +108,7 @@ li {
 	margin-top: 1rem;
 	text-align: left;
 	font-size: 1.8rem;
-	background-color: white;
+	background-color: var(--backgroundColor);
 	z-index: 1;
 	font-weight: 600;
 }
@@ -101,19 +123,33 @@ li {
 }
 
 .projects {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	gap: 10px;
 }
 
 .recentProjectHolder {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .listTitle {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	gap: 5px;
 }
 
@@ -129,4 +165,12 @@ li {
 
 .links {
 	font-size: 1.2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--textColor: #f5f5f5;
+		--linkColor: #5fa8ff;
+		--backgroundColor: #1a1a1a;
+	}
 }
