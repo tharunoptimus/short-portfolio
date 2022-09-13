@@ -61,6 +61,26 @@ li {
 	transition: all 500ms;
 }
 
+.dots::after {
+    animation: dots 2s linear infinite;
+    content: '';
+  }
+
+  @keyframes dots {
+    0%, 20% {
+      content: '.';
+    }
+    40% {
+      content: '..';
+    }
+    60% {
+      content: '...';
+    }
+    90%, 100% {
+      content: '';
+    }
+}
+
 .toggle {
 	cursor: pointer;
     background-color: var(--textColor);
