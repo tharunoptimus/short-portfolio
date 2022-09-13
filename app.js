@@ -1,8 +1,5 @@
 const LOCALSTORAGE_THEME = "theme"
 
-let toggle = document.querySelector(".toggle")
-toggle.addEventListener("click" , toggleTheme)
-
 
 function toggleTheme() {
     let emoji = getComputedStyle(toggle, ':before').getPropertyValue('content')
@@ -26,3 +23,6 @@ function setTheme(theme) {
 }
 
 main()
+
+let toggle = document.querySelector(".toggle")
+toggle.addEventListener("click" , toggleTheme)
