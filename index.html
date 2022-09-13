@@ -153,7 +153,10 @@
 			</ul>
 		</div>
 	</div>
-	<script>let toggle = document.querySelector(".toggle");toggle.addEventListener("click" , toggleTheme)</script>
+	
+	<script>let toggle = document.querySelector(".toggle");toggle.addEventListener("click" , toggleTheme);</script>
+	<script>function printNavTimingData(){let t=0;return performance.getEntriesByType("navigation").forEach(((e,n)=>{t=e.domInteractive})),(t/1e3).toFixed(2)}setTimeout((()=>{let t=document.querySelector(".timing"),e=printNavTimingData(),n=e<.45?" - that's faster than the blink of your eye! 😲":"";t.textContent=`Page loaded in ${e} s ${n}`,t.classList.remove("dots")}),2e3);</script>
+
 </body>
 
 </html>
