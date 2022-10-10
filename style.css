@@ -54,6 +54,7 @@ li {
 }
 
 .wrapper {
+	overflow: hidden;
 	position: relative;
 	max-width: 800px;
 	margin: 10px auto;
@@ -131,19 +132,82 @@ li {
     } 
 }
 
+.shape {
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+.triangle {
+	animation: green-triangle 7s infinite cubic-bezier(0.6, -0.28, 0.74, 0.05);
+	background-color: var(--welcome-green);
+	left: 300px;
+	top: 0;
+	transform: translate(-50%, -50%) rotate(-10deg);
+	transform-origin: 200px 300px;
+}
+
+@keyframes green-triangle {
+	to {
+		transform: translate(-50%, -50%) rotate(350deg);
+	}
+}
+
+.square {
+	animation: square 4s infinite linear;
+	background-color: var(--welcome-yellow);
+	left: 300px;
+	top: 200px;
+	transform: translate(-50%, -50%) rotate(29deg);
+}
+
+@keyframes square {
+	to {
+		transform: translate(-50%, -50%) rotate(389deg);
+	}
+
+}
+
 .imageContainer {
 	margin: 2rem auto 0;
 	padding: 2rem;
 	height: 10rem;
 	width: 10rem;
+	position: relative;
 }
 
-.imageContainer img {
+.imageContainer .mainImage {
 	height: 100%;
 	border: 1px solid var(--boxShadowColor);
 	border-radius: 50%;
 	-webkit-box-shadow: 0 0 16px 0 var(--boxShadowColor);
 	        box-shadow: 0 0 16px 0 var(--boxShadowColor);
+}
+
+.eyes {
+	transform: rotate(180deg);
+}
+
+.leftEye {
+	position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 85px;
+    left: 89px;
+    border-radius: 50%;
+}
+
+.rightEye {
+	position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 85px;
+    left: 116px;
+    border-radius: 50%;
 }
 
 .nameContainer,
@@ -247,6 +311,22 @@ li {
 
 .links {
 	font-size: 1.2rem;
+}
+
+.otherLinks {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-bottom: 1rem;
+}
+
+.otherLinks a:hover {
+	border-bottom: none;
+	transform: scale(1.08) translateY(-10px);
+}
+
+.otherLinks > * {
+	margin-right: 1rem;
 }
 
 .darkTheme {
