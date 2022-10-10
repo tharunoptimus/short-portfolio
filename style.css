@@ -172,6 +172,40 @@ li {
 
 }
 
+.rangoli {
+	height: 100px;
+    width: 100px;
+    position: absolute;
+    right: -18px;
+    top: 101px;
+    animation: square 4s linear infinite;
+    transform: translate(-50%, -50%) rotate(29deg);
+}
+
+.purplePolygon {
+	position: absolute;
+    height: 80px;
+    transform: rotate(-90deg);
+    left: -82px;
+    top: 130px;
+}
+
+.yellowTopTriangle {
+	position: absolute;
+    bottom: 1px;
+    height: 80px;
+    right: -59px;
+    transform: rotate(-90deg);
+}
+
+.leftSpinningStar {
+	position: absolute;
+    bottom: -104px;
+    height: 200px;
+    left: -99px;
+    animation: spin 3s linear infinite;
+}
+
 .imageContainer {
 	margin: 2rem auto 0;
 	padding: 2rem;
@@ -238,6 +272,7 @@ li {
 	        flex-direction: column;
 	gap: 10px;
 	font-size: 1.2rem;
+	position: relative;
 }
 
 .aboutContainer span:nth-child(1),
