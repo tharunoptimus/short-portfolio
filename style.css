@@ -94,6 +94,9 @@ li {
     top: 20px;
     right: 20px;
     font-size: 1.4rem;
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
 }
 
 .toggle::before {
@@ -105,6 +108,19 @@ li {
 	-webkit-transform: scale(1.09);
 	    -ms-transform: scale(1.09);
 	        transform: scale(1.09);
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
 
 .imageContainer {
