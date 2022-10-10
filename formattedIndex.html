@@ -167,28 +167,7 @@
 	<script>function printNavTimingData(){let t=0;return performance.getEntriesByType("navigation").forEach(((e,n)=>{t=e.domInteractive})),(t/1e3).toFixed(2)}setTimeout((()=>{let t=document.querySelector(".timing"),e=printNavTimingData(),n=e<.45?" - that's faster than the blink of your eye! 😲":"";t.textContent=`Page loaded in ${e} s ${n}`,t.classList.remove("dots")}),2e3);</script>
 
 	<script>
-		document.addEventListener("mousemove", e => {
-			let mouseX = e.clientX
-			let mouseY = e.clientY
-			let main = document.querySelector(".mainImage")
-			let rekt = main.getBoundingClientRect()
-			let mainX = rekt.left + rekt.width / 2
-			let mainY = rekt.top + rekt.height / 2
-			let angleDeg = angle(mouseX, mouseY, mainX, mainY)
-
-			let eyes = document.querySelectorAll(".eyes")
-			eyes.forEach(eye => {
-				eye.style.transform = `rotate(${90 + angleDeg}deg)`
-			})
-		})
-
-		function angle(cx, cy, ex, ey) {
-			const dy = ey - cy;
-			const dx = ex - cx;
-			const rad = Math.atan2(dy, dx);
-			const deg = rad * 180 / Math.PI;
-			return deg;
-		}
+		let mainImage=document.querySelector(".mainImage"),rekt=mainImage.getBoundingClientRect(),mainX=rekt.left+rekt.width/2,mainY=rekt.top+rekt.height/2,eyes=document.querySelectorAll(".eyes");function angle(e,t,n,a){return 180*Math.atan2(a-t,n-e)/Math.PI}document.addEventListener("mousemove",e=>{let t,n=angle(e.clientX,e.clientY,mainX,mainY);eyes.forEach(e=>{e.style.transform=`rotate(${90+n}deg)`})});
 	</script>
 
 </body>
