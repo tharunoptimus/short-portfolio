@@ -2,6 +2,7 @@
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern" 1;
     -webkit-font-feature-settings: "kern" 1;
+    font-weight: 400;
 }
 
 @font-face {
@@ -353,7 +354,6 @@ li {
     font-size: 1.8rem;
     background-color: var(--backgroundColor);
     z-index: 1;
-    font-weight: 600;
 }
 
 .aboutContainer span:nth-child(2) {
