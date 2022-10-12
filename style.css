@@ -1,7 +1,7 @@
 * {
     text-rendering: optimizeLegibility;
-    font-feature-settings: "kern" 1;
     -webkit-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
     font-weight: 400;
 }
 
@@ -149,7 +149,6 @@ li {
 .toggle:hover,
 .toggle:focus,
 .toggle:active {
-    top: 15px;
     -webkit-transform: scale(1.09);
     -ms-transform: scale(1.09);
     transform: scale(1.09);
