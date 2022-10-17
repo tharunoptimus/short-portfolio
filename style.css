@@ -62,7 +62,7 @@ li {
     overflow: hidden;
     position: relative;
     max-width: 800px;
-    margin: 10px auto;
+    margin: 10px auto 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -353,6 +353,9 @@ li {
     font-size: 1.8rem;
     /* background-color: var(--backgroundColor); */
     z-index: 1;
+    border-left: 6px solid var(--linkColor);
+    padding-left: 0.5rem;
+    border-radius: 5px;
 }
 
 .aboutContainer span:nth-child(2) {
