@@ -302,10 +302,7 @@ li {
 	font-size: 1.2rem;
 	position: relative;
 }
-.aboutContainer span:nth-child(1),
-.projects span:nth-child(1),
-.realNumbers span:nth-child(1),
-.links span {
+.headingSpan{
 	margin-top: 1rem;
 	text-align: left;
 	font-size: 1.8rem;
