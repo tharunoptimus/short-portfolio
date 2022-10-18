@@ -14,7 +14,7 @@
 :root {
 	--textColor: #000000;
 	--linkColor: #0070f3;
-	--backgroundColor: #ffffff;
+	--backgroundColor: #ffffff url(./bg.svg);
 	--boxShadowColor: #44444444;
 	--buttonBackground: #0000001a;
 	--colorMode: "🌚";
@@ -35,7 +35,7 @@ body {
 		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
 		"Helvetica Neue", sans-serif;
 	color: var(--textColor);
-	background-color: var(--backgroundColor);
+	background: var(--backgroundColor);
 }
 a {
 	text-decoration: none;

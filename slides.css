@@ -185,7 +185,6 @@
 	font-weight: bold;
 	padding: 0;
 	line-height: 1;
-	color: var(--titleColor);
 	margin-bottom: 30px;
 	width: 80%;
 	margin-left: auto;
@@ -205,7 +204,6 @@
 
 .timelineSnippet {
 	max-width: 70vw;
-	color: var(--snippetColor);
 	margin: 0 auto;
 	padding: 0;
 	font-size: 18px;
