@@ -14,7 +14,7 @@
 :root {
 	--textColor: #000000;
 	--linkColor: #0070f3;
-	--backgroundColor: #ffffff url(./bg.svg);
+	--backgroundColor: #ffffff;
 	--boxShadowColor: #44444444;
 	--buttonBackground: #0000001a;
 	--colorMode: "🌚";
