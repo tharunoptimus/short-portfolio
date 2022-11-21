@@ -254,9 +254,9 @@ li {
 	box-shadow: 0 0 16px 0 var(--boxShadowColor);
 }
 .eyes {
-	-webkit-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
+	-webkit-transform: rotate(-64.9275deg);
+	-ms-transform: rotate(-64.9275deg);
+	transform: rotate(-64.9275deg);
 }
 .leftEye {
 	position: absolute;
@@ -433,7 +433,7 @@ li {
 .darkTheme {
 	--textColor: #f5f5f5;
 	--linkColor: #5fa8ff;
-	--backgroundColor: #202124;
+	--backgroundColor: #1d1f20;
 	--buttonBackground: #ffffff26;
 	--colorMode: "🌞";
 }
